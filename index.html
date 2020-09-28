@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamically Add Remove Table Rows in JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="topnav">
+        
+        <a href="#claim status">Claim Status</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a href="#documents received">Documents Received</a>
+      </div>
+      
+      <div style="padding-left:16px">
+        
+      </div>
+      
+        <!--cards -->
+        
+       <div class="card">
+      
+       
+       <div class="title">
+        <h5>Patient Name  &nbsp   &nbsp  John Smith</h5>
+        <h5>Claim Number  &nbsp   &nbsp  Cl2434234</h5>
+        <h5>Data Submitted  &nbsp   &nbsp 2007-04-26T00:00:00 &nbsp &nbsp &nbsp <a href='#'> <i class="fa fa-caret-right" aria-hidden="true" style= "font-size:20px;color: blue;"></i></a></h5>
+        <h5>Document     &nbsp    &nbsp <a href="#"><i class="fa fa-chevron-circle-down" aria-hidden="true" style= "color: green;"></i></a>
+            Completed</h5>
+        <h5>Status      &nbsp     &nbsp  </h5>
+       </div>
+       
+    </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+
+        <div class="title">
+            <h5>Patient Name  &nbsp   &nbsp  John Smith</h5>
+            <h5>Claim Number  &nbsp   &nbsp  Cl34243334</h5>
+            <h5>Data Submitted  &nbsp   &nbsp 2010-04-26T00:00:00 &nbsp &nbsp &nbsp <a href='#'> <i class="fa fa-caret-right" aria-hidden="true" style= "font-size:20px;color: blue;"></i></a></h5>
+            <h5>Document     &nbsp    &nbsp  <a href='#'><i class="fa fa-exclamation-circle" aria-hidden="true" style= "color: yellow;"></i></a>Additional Info</h5>
+            <h5>Status      &nbsp     &nbsp  Required</h5>
+           </div>
+        </div>
+           
+       
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       
+       <div class="title">
+        <h5>Patient Name  &nbsp   &nbsp  Steve Bernard</h5>
+        <h5>Claim Number  &nbsp   &nbsp  Cl34234334</h5>
+        <h5>Data Submitted  &nbsp   &nbsp 2013-04-26T00:00:00 &nbsp &nbsp &nbsp <a href='#'> <i class="fa fa-caret-right" aria-hidden="true" style= "font-size:20px;color: blue;"></i></a></h5>
+        <h5>Document     &nbsp    &nbsp  <i class="fa fa-exclamation-circle" aria-hidden="true" style= "color: yellow;"></i> Additional Info</h5>
+        <h5>Status      &nbsp     &nbsp  Required</h5>
+        </div>
+    </div>
+       <div class="main">
+       <div class="topnav">
+
+        <a href="#claim status">Claim Status </a>
+
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a>&nbsp</a>
+        <a href="#documents received">Documents Received</a>
+    
+         </div>
+         <div style="padding-left:16px">
+           
+         </div>
+         
+         
+            <i class="fa fa-caret-left" aria-hidden="true"> &nbsp Back</i>
+            
+             <body onload="createTable()">
+            
+             <div id="cont">  <!-- the container to add the TABLE -->
+                <button class="btn1"><i class="fa fa-life-ring" aria-hidden="true"></i>Delete</button>
+                <p id='output'></p>
+             <div><h1>Certificates</h1></div>    
+            <div id="container">
+                  
+            <input type="button"  button class ='btn2' id="addRow" value="Add File"  onclick="addRow()" />
+             <p id='output'></p>
+            </div>
+            </div>
+        
+   
+        </body>
+     <script src="script.js"></script>
+    </body>
+</html>

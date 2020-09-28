@@ -1,0 +1,98 @@
+* { font: 17px Calibri; } 
+table { width: 70%; }
+table, th, td { border: ridge 1px #DDD;
+    border-collapse: separate; padding: 2px 3px; text-align: center;
+    caption-side: bottom;
+    border-spacing: 10px;
+    table-layout: auto;
+    empty-cells: hide;
+   column-span: "2";
+  
+
+}
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  background-color: white;
+  text-align :left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid blue;
+}
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+ }
+ body{
+  font-family: arial;
+ }
+ .main{
+ 
+  margin: 2%;
+ }
+ 
+ .card{
+      width: 20%;
+      display: inline-block;
+      box-shadow: 2px 2px 10px black;
+      border-radius: 5px; 
+      height: 40%;
+      
+     }
+ 
+ 
+ 
+ .title{
+  
+   text-align: left;
+   padding: 10px;
+   
+  }
+ 
+ h1{
+   font-size: 20px;
+  }
+ 
+ .des{
+   padding: 3px;
+   text-align: center;
+  
+   padding-top: 10px;
+         border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+ }
+ 
+ 
+.btn2 {
+  background-color:blue;
+  color: white;
+  display: inline-block;
+}
+.btn1 {
+  background-color:red;
+  color: white;
+}
+.btn3 {
+  background-color:red;
+  color: white;
+}
+#container
+{
+  text-align: center;
+}
